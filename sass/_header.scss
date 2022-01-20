@@ -1,0 +1,34 @@
+@use "./variables" as *;
+@use "./breakpoints" as *;
+
+header {
+  padding: 2rem 0;
+  text-align: center;
+  text-transform: uppercase;
+  .first-section {
+    display: grid;
+    place-items: center;
+    .name {
+      font-size: 2rem;
+      color: $main-color;
+      padding: 1rem 2rem;
+      border: 1px solid $main-color;
+      width: fit-content;
+      @include breakpoint-down(sm) {
+        font-size: 1rem;
+      }
+      span {
+        font-weight: 400;
+        color: $text-color;
+      }
+    }
+  }
+  .second-section {
+    padding: 2rem;
+    background-color: $sec-color;
+    h2 {
+      font-family: $font;
+      font-weight: 400;
+    }
+  }
+}

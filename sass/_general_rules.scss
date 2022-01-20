@@ -1,0 +1,15 @@
+@use "./variables" as *;
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: $link-color;
+}
+
+i {
+  margin-right: 1rem;
+  color: #ccc;
+}

@@ -1,3 +1,9 @@
+@use "./breakpoints" as *;
+@use "./variables" as *;
+@use "./header" as *;
+@use "./main" as *;
+@use "./general_rules" as *;
+
 * {
   margin: 0;
   padding: 0;
@@ -5,7 +11,13 @@
 }
 
 body {
+  font-family: $font;
+  font-size: 1rem;
+  color: $text-color;
 }
 
 .container {
+  max-width: map-get($container-widths, xl);
+  margin: 0 auto;
+  padding: 0 1rem;
 }
